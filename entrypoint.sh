@@ -50,7 +50,6 @@ if [[ $PLATFORMS == *"linux"* ]]; then
     pyinstaller --log-level=DEBUG \
         --clean --noupx \
         --noconfirm \
-        --onefile \
         --distpath dist/linux \
         --workpath /tmp \
         -p . \
@@ -65,7 +64,6 @@ if [[ $PLATFORMS == *"win"* && $ret == 0 ]]; then
     /usr/win64/bin/pyinstaller --log-level=DEBUG \
         --clean --noupx \
         --noconfirm \
-        --onefile \
         --distpath dist/windows \
         --workpath /tmp \
         -p . \
